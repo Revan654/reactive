@@ -1,0 +1,12 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+configuration: Release
+platform: x64
+clone_folder: C:\Reactive
+build:
+  project: System.Reactive.sln
+  parallel: true
+  verbosity: minimal
+artifacts:
+- path: bin
+  name: Reactive
